@@ -1,0 +1,3 @@
+//mixed data types in one
+//resizeable, no need to declare size of array before creating it
+//Arrays are iterables, we can use for loop
