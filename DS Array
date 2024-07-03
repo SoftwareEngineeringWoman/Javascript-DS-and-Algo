@@ -1,3 +1,43 @@
 //mixed data types in one
 //resizeable, no need to declare size of array before creating it
 //Arrays are iterables, we can use for loop
+
+//eg: 
+
+const arr=[1,2,3,'Saira']
+console.log(arr[0])        // 1
+
+// methods in array
+// push: to add elemenet at end
+//and iterate with for loop
+
+const arr=[1,2,3,'Saira']
+arr.push(4)
+for(const item of arr){
+console.log(item)    //1 2 3 Saira 4
+}
+
+// to add in front of array with unshift
+
+const arr=[1,2,3,'Saira']
+arr.push(4)
+arr.unshift(0)
+for(const item of arr){
+console.log(item)    //0 1 2 3 Saira 4
+}
+
+// arr.pop() will remove from end of array
+// arr.shift()  will remove from begning of array
+
+//more Methods: map, filter, reduce , concat, slice, splice
+
+//time complexity for array
+// array need to maintain the index 
+//insert or remove from end -O(1)
+//insert or remove from beg -O(n)
+// access- O(1)
+//Search - O(n)
+//push/pop - O(1)
+// shift/ unshift/ concat/slice/splice - O(n)
+// foreach/map/filter/reduce - O(n)
+
