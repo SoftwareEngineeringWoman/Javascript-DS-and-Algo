@@ -1,0 +1,38 @@
+// unordered collection of key value pairs
+//dot or bracket help to retreive  a value using key
+//not iterable, no for loop
+
+const obj = {
+name: 'sal',
+age: 20
+}
+console.log(obj)  // {name: 'sal',age: 20}
+
+//access an element with dot or bracket
+
+const obj = {
+name: 'sal',
+age: 20
+}
+obj.hobby='swim'    // adds this to obj
+delete obj.hobby   // deletes 
+console.log(obj.name) 
+console.log(obj['age'])   // age should be string ''
+
+
+// add functions as values
+const obj = {
+name: 'sal',
+age: 20
+sayMyNmae: function(){
+console.log(this.name)
+}
+}
+console.log(obj) 
+obj.sayMyNmae() // Sal
+
+// methods: object.keys(), .values(), .entries() : return array of all the keys, values and pairs in an object
+
+//worst case time complexity
+// insert, remove, access: O(1)
+// search, object.keys(), .values(), .entries(): O(n)
