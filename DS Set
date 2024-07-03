@@ -1,0 +1,22 @@
+//holds unique collection of values
+// dynamically sized: no need tp dec size before creating it
+//does not maintain insertion order
+// can be used in for
+//searching and deleting is faster than arrays
+
+//we use set constructor to create a set
+
+const set = new Set([1,2,3])
+for(const item of set){
+console.log(item)
+}        // 1 2 3
+
+const set = new Set([1,2,3])
+set.add(4)      // adding an element
+console.log(set.has(2))   // true
+for(const item of set){
+console.log(item)
+}        // 1 2 3 4
+//set.delete(3) to delete
+// console.log(set.size)  to check size
+//set.clear()
